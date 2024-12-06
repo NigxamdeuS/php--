@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご予約 - 匠太楼</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">匠太楼</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">当店について</a></li>
+                <li><a href="#menu">お品書き</a></li>
+                <li><a href="#rooms">お部屋</a></li>
+                <li><a href="reservation.html">ご予約</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-page">
+        <h1>ご予約</h1>
+        <form id="reservationForm" class="reservation-form">
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">ご予約日</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">ご予約時間</label>
+                <select id="time" name="time" required>
+                    <option value="">選択してください</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <!-- 他の時間帯 -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">人数</label>
+                <select id="guests" name="guests" required>
+                    <option value="">選択してください</option>
+                    <option value="1">1名様</option>
+                    <option value="2">2名様</option>
+                    <!-- 他の人数 -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course">コース選択</label>
+                <select id="course" name="course" required>
+                    <option value="">選択してください</option>
+                    <option value="course1">匠の会席 ¥15,000</option>
+                    <option value="course2">雅の懐石 ¥20,000</option>
+                    <option value="course3">季節の逸品 ¥25,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">備考</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">予約を確認する</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3></h3>
+                <p>〒600-8357 京都市京都市下京区柿本町５９６</p>
+                <p>TEL: XX-XXXX-XXXX</p>
+                <p>営業時間: 11:00-22:00</p>
+                <p>定休日: 水曜日</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>匠太楼 ryoteishoutarou.com</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html> 
